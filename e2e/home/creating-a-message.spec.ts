@@ -1,8 +1,13 @@
 import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
+  let url = 'http://localhost:3000';
   // Go to the starting url before each test.
-  await page.goto('http://localhost:3000');
+  if (process.env.CI) {
+    url = 'https://nextjs-dashboard-eosin-three-42.vercel.app/';
+  }
+
+  await page.goto(url);
 });
 
 test.describe('Creating a message', () => {
