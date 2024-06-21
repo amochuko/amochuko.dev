@@ -1,3 +1,5 @@
+// Font for the app
+
 import { Inter, Lusitana } from 'next/font/google';
 
 export const inter = Inter({ subsets: ['latin'] });
