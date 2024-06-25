@@ -13,7 +13,6 @@ const customJestConfig = {
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
-  coverageDirectory: './jest-coverage',
 };
 
 module.exports = createJestConfig(customJestConfig);
