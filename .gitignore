@@ -39,3 +39,7 @@ next-env.d.ts
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# miscellaneous
+app/ui/test-demo.tsx
+app/ui/__tests__/test-demo.test.tsx
